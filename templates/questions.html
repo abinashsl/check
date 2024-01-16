@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Career Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center; /* Center align the content */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Align text in questions to the left */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="radio"] {
+            margin-left: 5px; /* Add space to the left of radio buttons */
+            margin-right: 10px; /* Add a small space between radio buttons and their choices */
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 25px; /* Increase button size */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0; /* Add margin for spacing */
+            font-size: 16px; /* Increase font size */
+            font-weight: bold; /* Make font bold */
+            letter-spacing: 1px; /* Add slight letter spacing */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Disable the back button
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+    </script>
+    
+    <h1>Student Career Prediction</h1>
+
+    <form action="/submit" method="post">
+        <!-- Question 1 (Tamil) -->
+        <div class="question">
+            <label>1. Rate yourself based on marks you have scored in TAMIL:</label>
+            <input type="radio" name="q1" value="Poor"> Poor
+            <input type="radio" name="q1" value="Good"> Good
+            <input type="radio" name="q1" value="Fair"> Fair
+            <input type="radio" name="q1" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 2 (English) -->
+        <div class="question">
+            <label>2. Rate yourself based on marks you have scored in ENGLISH:</label>
+            <input type="radio" name="q2" value="Poor"> Poor
+            <input type="radio" name="q2" value="Good"> Good
+            <input type="radio" name="q2" value="Fair"> Fair
+            <input type="radio" name="q2" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 3 (Math) -->
+        <div class="question">
+            <label>3. Rate yourself based on marks you have scored in MATH:</label>
+            <input type="radio" name="q3" value="Poor"> Poor
+            <input type="radio" name="q3" value="Good"> Good
+            <input type="radio" name="q3" value="Fair"> Fair
+            <input type="radio" name="q3" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 4 (Physics) -->
+        <div class="question">
+            <label>4. Rate yourself based on marks you have scored in PHYSICS:</label>
+            <input type="radio" name="q4" value="Poor"> Poor
+            <input type="radio" name="q4" value="Good"> Good
+            <input type="radio" name="q4" value="Fair"> Fair
+            <input type="radio" name="q4" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 5 (Chemistry) -->
+        <div class="question">
+            <label>5. Rate yourself based on marks you have scored in CHEMISTRY:</label>
+            <input type="radio" name="q5" value="Poor"> Poor
+            <input type="radio" name="q5" value="Good"> Good
+            <input type="radio" name="q5" value="Fair"> Fair
+            <input type="radio" name="q5" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 6 (Computer Science) -->
+        <div class="question">
+            <label>6. Rate yourself based on marks you have scored in COMPUTER SCIENCE:</label>
+            <input type="radio" name="q6" value="Poor"> Poor
+            <input type="radio" name="q6" value="Good"> Good
+            <input type="radio" name="q6" value="Fair"> Fair
+            <input type="radio" name="q6" value="Excellent"> Excellent
+        </div>
+
+        <!-- Question 7 (Biology) -->
+        <div class="question">
+            <label>7. Rate yourself based on marks you have scored in BIOLOGY:</label>
+            <input type="radio" name="q7" value="Poor"> Poor
+            <input type="radio" name="q7" value="Good"> Good
+            <input type="radio" name="q7" value="Fair"> Fair
+            <input type="radio" name="q7" value="Excellent"> Excellent
+        </div>
+
+        <!-- Add similar blocks for Questions 8 to 10 -->
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
